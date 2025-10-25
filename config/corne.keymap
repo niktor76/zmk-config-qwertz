@@ -15,8 +15,9 @@
       compatible = "zmk,behavior-hold-tap";
       label = "A_or_AE";
       #binding-cells = <2>;
-      flavor = "hold-preferred";
+      flavor = "balanced";
       tapping-term-ms = <200>;
+      require-prior-idle-ms = <125>;
       bindings = <&kp &kp>;
     };
 
@@ -24,8 +25,9 @@
       compatible = "zmk,behavior-hold-tap";
       label = "O_or_OE";
       #binding-cells = <2>;
-      flavor = "hold-preferred";
+      flavor = "balanced";
       tapping-term-ms = <200>;
+      require-prior-idle-ms = <125>;
       bindings = <&kp &kp>;
     };
 
@@ -33,8 +35,9 @@
       compatible = "zmk,behavior-hold-tap";
       label = "U_or_UE";
       #binding-cells = <2>;
-      flavor = "hold-preferred";
+      flavor = "balanced";
       tapping-term-ms = <200>;
+      require-prior-idle-ms = <125>;
       bindings = <&kp &kp>;
     };
   };
