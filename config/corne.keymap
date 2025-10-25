@@ -16,9 +16,9 @@
       compatible = "zmk,behavior-hold-tap";
       label = "A_or_AE";
       #binding-cells = <0>;
-      flavor = "hold-preferred";      /* try "balanced" if you prefer easier taps */
+      flavor = "hold-preferred";
       tapping-term-ms = <200>;
-      bindings = <&kp DE_AE>, <&kp A>;  /* hold = Ä/ä, tap = A */
+      bindings = <&kp DE_AE &kp A>; /* hold = Ä/ä, tap = A */
     };
 
     o_or_oe: o_or_oe {
@@ -27,7 +27,7 @@
       #binding-cells = <0>;
       flavor = "hold-preferred";
       tapping-term-ms = <200>;
-      bindings = <&kp DE_OE>, <&kp O>;  /* hold = Ö/ö, tap = O */
+      bindings = <&kp DE_OE &kp O>; /* hold = Ö/ö, tap = O */
     };
 
     u_or_ue: u_or_ue {
@@ -36,13 +36,14 @@
       #binding-cells = <0>;
       flavor = "hold-preferred";
       tapping-term-ms = <200>;
-      bindings = <&kp DE_UE>, <&kp U>;  /* hold = Ü/ü, tap = U */
+      bindings = <&kp DE_UE &kp U>; /* hold = Ü/ü, tap = U */
     };
   };
 
   keymap {
     compatible = "zmk,keymap";
 
+    /* ---------------------- Default Layer ---------------------- */
     default_layer {
       display-name = "Default Layer";
       // -----------------------------------------------------------------------------------------
@@ -54,10 +55,11 @@
         &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T        &kp Z     &u_or_ue &kp I     &o_or_oe &kp P     &kp BSPC
         &kp LCTRL &a_or_ae  &kp S     &kp D     &kp F     &kp G        &kp H     &kp J    &kp K     &kp L     &kp SEMI  &kp DE_SS
         &kp LSHFT &kp Y     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M    &kp COMMA &kp DOT   &kp FSLH  &kp ESC
-                           &kp LGUI   &mo 1     &kp SPACE              &kp RET   &mo 2    &kp RALT
+                             &kp LGUI   &mo 1     &kp SPACE              &kp RET   &mo 2    &kp RALT
       >;
     };
 
+    /* ---------------------- Lower Layer ---------------------- */
     lower_layer {
       display-name = "Lower Layer";
       // -----------------------------------------------------------------------------------------
@@ -73,6 +75,7 @@
       >;
     };
 
+    /* ---------------------- Raise Layer ---------------------- */
     raise_layer {
       display-name = "Raise Layer";
       // -----------------------------------------------------------------------------------------
