@@ -10,6 +10,36 @@
 #include <locale/keys_de.h>
 
 / {
+
+  behaviors {
+    a_or_ae: a_or_ae {
+      compatible = "zmk,behavior-hold-tap";
+      label = "A_or_AE";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <200>;
+      bindings = <&kp &kp>;
+    };
+
+    o_or_oe: o_or_oe {
+      compatible = "zmk,behavior-hold-tap";
+      label = "O_or_OE";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <200>;
+      bindings = <&kp &kp>;
+    };
+
+    u_or_ue: u_or_ue {
+      compatible = "zmk,behavior-hold-tap";
+      label = "U_or_UE";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <200>;
+      bindings = <&kp &kp>;
+    };
+  };
+
         keymap {
                 compatible = "zmk,keymap";
 
