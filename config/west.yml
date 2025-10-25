@@ -1,5 +1,6 @@
-# config/west.yml
 manifest:
+  defaults:
+    revision: v0.3         # or use "main" if you want latest development
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -9,6 +10,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
+      revision: v0.3       # pin to the released 0.3 line (matches your workflow @v0.3)
       import: app/west.yml
     - name: zmk-locales
       remote: joelspadin
