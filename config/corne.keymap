@@ -52,7 +52,7 @@
       //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
       bindings = <
         &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T        &kp Z     &u_or_ue &kp I     &o_or_oe &kp P     &kp BSPC
-        &kp LCTRL &a_or_ae  &kp S     &kp D     &kp F     &kp G        &kp H     &kp J    &kp K     &kp L     &kp SEMI  &kp DE_SZ
+        &kp LCTRL &a_or_ae  &kp S     &kp D     &kp F     &kp G        &kp H     &kp J    &kp K     &kp L     &kp SEMI  &kp DE_SS
         &kp LSHFT &kp Y     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M    &kp COMMA &kp DOT   &kp FSLH  &kp ESC
                            &kp LGUI   &mo 1     &kp SPACE              &kp RET   &mo 2    &kp RALT
       >;
