@@ -1,23 +1,17 @@
 manifest:
   defaults:
     revision: v0.3
-
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-
   projects:
-    # ZMK core firmware
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-      path: modules/zmk            # 👈 important: this line tells West where to place ZMK
-
-    # German locale support
+      path: modules/zmk
     - name: zmk-locales
       url: https://github.com/joelspadin/zmk-locales
       revision: main
       path: modules/zmk-locales
-
   self:
     path: config
